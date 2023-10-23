@@ -37,24 +37,11 @@ start index.html  # On Windows
 1. Fork the repository on GitHub.
 
 2. Clone your fork:
-git clone https://github.com/YOUR_USERNAME/boAt-earbuds-webpage-and-3d-model.git
-
-3. Navigate to your clone:
-cd boAt-earbuds-webpage-and-3d-model
-
-4. Create a new branch:
-git checkout -b NAME_OF_YOUR_NEW_BRANCH
-
-5. Make changes, commit and push them:
-git add .
-git commit -m "Your commit message"
-git push origin NAME_OF_YOUR_NEW_BRANCH
-
-6. Go to the GitHub page of your fork and make a Pull Request.
+git clone https://github.com/h1tPatel/Patel_Hit_Earbuds-Project.git
 
 # 📜MIT License
 
-Copyright (c) [YEAR] [YOUR NAME]
+Copyright (c) 2023 Hit_Patel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -78,6 +65,4 @@ SOFTWARE.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/boAt-earbuds-webpage-and-3d-model.git
-
-# Patel_Hit_Earbuds-Project
+   git clone https://github.com/h1tPatel/Patel_Hit_Earbuds-Project.git
