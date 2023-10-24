@@ -6,26 +6,32 @@
     { 
       title: "Ear Tip",
       text: "Crafted with precision, our ear tips provide a snug fit, ensuring maximum comfort and exceptional sound isolation. Say goodbye to discomfort and hello to immersive audio!",
+      image: "../images/eartip.jpeg"
     },
     {
       title: "Charging Points",
       text: "Our earbuds feature hassle-free magnetic charging points. Simply snap them into place, and they'll charge effortlessly. It's convenience redefined!",
+      image: ""
     },
     {
       title: "Battery",
       text: "Experience all-day listening with our long-lasting battery. From your morning commute to late-night workouts, our earbuds keep the music playing.",
+      image: "../images/battery.png"
     },
     {
       title: "Active Noise Cancellation",
       text: "Escape into your own world with our advanced Active Noise Cancellation technology. Block out distractions and immerse yourself in your favorite tunes or podcasts.",
+      image: "../images/anc.jpeg"
     },
     {
       title: "Multi-Function Button",
       text: "Control everything with a simple touch. Play, pause, skip tracks, and even answer calls without reaching for your phone. It's music control at your fingertips!",
+      image: ""
     },
     {
       title: "Speaker",
       text: "Our earbuds feature high-quality speakers that deliver crystal-clear sound with deep bass. Get ready to be blown away by the richness and depth of your music.",
+      image: ""
     },
   ];
 // this is is the function to give data to h2 and p tag
@@ -33,10 +39,11 @@ function populateHotspotContent() {
   hotspotData.forEach((data, index) => {
     const hotspotTitle = document.getElementById(`hotspot-title-${index + 1}`); // it will increment h2 id by 1 
     const hotspotText = document.getElementById(`hotspot-text-${index + 1}`);   // it will increment text id by 1
-
+    const hotspotImage = document.getElementById(`hotspot-img-${index + 1}`);   //it will increment image id by 1 
     if (hotspotTitle && hotspotText) {
       hotspotTitle.textContent = data.title;
       hotspotText.textContent = data.text;
+      hotspotImage.src = data.image;
     }
   });
 }

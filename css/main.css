@@ -75,6 +75,11 @@
     display: none;
   }
 
+  .HotspotAnnotation img{
+    width: 100px;
+    height: auto;
+  }
+
   
   
   
@@ -175,4 +180,211 @@
   }
 
 
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #2c3e50;
+    border-bottom: 5px solid #00aaff;
+}
 
+#logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bdc3c7;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.header-bottom {
+    background-color: #1a252f;
+    padding: 10px 5%;
+    text-align: center;
+    color: #bdc3c7;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5%;
+  background-color: #2c3e50;
+  color: #fff;
+  border-top: 5px solid #00aaff;
+  margin-top: 10px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 20px;
+}
+
+.footer-column p, .footer-column ul {
+  margin: 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #bdc3c7;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 10px 5%;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00aaff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0088cc;
+}
+
+
+
+/* Existing CSS code... */
+
+/* Responsiveness for tablet */
+@media only screen and (max-width: 1024px) {
+  #logo {
+      font-size: 20px;
+  }
+
+  .header-top {
+      padding: 10px 4%;
+  }
+
+  nav li {
+      margin: 0 10px;
+  }
+
+  .footer-container {
+      padding: 20px 4%;
+  }
+
+  .footer-column {
+      margin: 0 10px;
+  }
+
+  .progress-bar {
+      width: 50%;
+  }
+
+  #ar-button {
+      padding: 0px 12px 0px 35px;
+      font-size: 12px;
+  }
+
+  .header-bottom {
+      padding: 8px 4%;
+  }
+
+  .footer-bottom {
+      padding: 8px 4%;
+  }
+}
+
+/* Responsiveness for mobile */
+@media only screen and (max-width: 768px) {
+  #logo {
+      font-size: 18px;
+  }
+
+  .header-top {
+      padding: 5px 3%;
+      flex-direction: column;
+  }
+
+  nav li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-column {
+      margin: 10px 0;
+  }
+
+  .progress-bar {
+      width: 70%;
+  }
+
+  #ar-button {
+      padding: 0px 8px 0px 30px;
+      font-size: 10px;
+  }
+
+  .header-bottom {
+      padding: 5px 3%;
+  }
+
+  .footer-bottom {
+      padding: 5px 3%;
+  }
+
+  input[type="email"] {
+      padding: 8px;
+  }
+
+  button[type="submit"] {
+      padding: 8px 12px;
+  }
+}
