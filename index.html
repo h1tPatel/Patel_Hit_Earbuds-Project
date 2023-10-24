@@ -8,37 +8,61 @@
     <link type="text/css" href="./css/main.css" rel="stylesheet"/>
   </head>
   <body>
+    <header>
+      <div class="header-top">
+          <div id="logo">boAt</div>
+          <nav>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="header-bottom">
+          <p>Experience the Best Audio Quality</p>
+      </div>
+  </header>
+  
     <!-- <model-viewer> HTML element -->
     <model-viewer src="./model/Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="2" exposure="2" shadow-softness="0.44" auto-rotate>
       <button class="Hotspot" slot="hotspot-1" data-position="0.12397872016692164m 0.7155863218807105m -0.584855542754742m" data-normal="0.9458611058144986m -0.054926731146235364m 0.3198903291957465m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-1"></h2>
             <p id="hotspot-text-1"></p>
+            <img id="hotspot-img-1">
         </div>
       </button><button class="Hotspot" slot="hotspot-4" data-position="0.017491094395643503m 0.45696505738234805m -0.8159754603749746m" data-normal="-0.0005625570623005171m 0.004913173475599016m 0.9999877720532138m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-2"></h2>
             <p id="hotspot-text-2"></p>
+            <img id="hotspot-img-2">
         </div>
       </button><button class="Hotspot" slot="hotspot-5" data-position="0.00015256776955770678m 0.5101093572899655m -0.7947144000979492m" data-normal="-0.005156784511241685m -0.03841438874468005m 0.9992485888460776m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-3"></h2>
             <p id="hotspot-text-3"></p>
+            <img id="hotspot-img-3">
           </div>
       </button><button class="Hotspot" slot="hotspot-6" data-position="-0.10839027555963791m 0.7430405373433617m -0.7350826828611357m" data-normal="-0.9874593923414282m 0.15786759172799855m -0.0013311493903089835m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-4"></h2>
             <p id="hotspot-text-4"></p>
+            <img id="hotspot-img-4">
         </div>
       </button><button class="Hotspot" slot="hotspot-7" data-position="0.0032103560281227152m 0.6987249796757089m -1.0472146784930123m" data-normal="0.0005625570623005173m -0.004913173475599018m -0.999987772053214m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-5"></h2>
             <p id="hotspot-text-5"></p>
+            <img id="hotspot-img-5">
           </div>
       </button><button class="Hotspot" slot="hotspot-8" data-position="-0.04761921339430857m 0.6967546848670639m -0.6892707893623795m" data-normal="-0.9939351355861021m -0.10948184753942439m 0.010328180226511774m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">
             <h2 id="hotspot-title-6"></h2>
             <p id="hotspot-text-6"></p>
+            <img id="hotspot-img-6">
           </div>
       </button>
       <div class="progress-bar hide" slot="progress-bar">
@@ -50,7 +74,35 @@
       <div id="ar-prompt">
           <img src="./images/ar_hand_prompt.png">
       </div>
-    </model-viewer>  
+    </model-viewer>  <footer>
+      <div class="footer-container">
+          <div class="footer-column">
+              <h4>About boAt</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+          </div>
+          <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Warranty</a></li>
+                  <li><a href="#">FAQs</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h4>Newsletter</h4>
+              <p>Stay updated with our latest products and offers.</p>
+              <form action="#">
+                  <input type="email" placeholder="Enter your email">
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2023 boAt. All rights reserved.</p>
+      </div>
+  </footer>
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="./js/main.js"></script>
