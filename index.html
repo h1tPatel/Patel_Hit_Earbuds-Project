@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link type="text/css" href="./css/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/grid.css" rel="grid">
   </head>
   <body>
     <header>
-      <div class="header-top">
-          <div id="logo">boAt</div>
-          <nav>
+      
+      <div class="header-top grid-con ">
+          <div id="logo" class="l-col-span-3 m-col-span-3">boAt</div>
+          <nav class="l-col-start-6 l-col-end-12 m-col-span-6 l-col-span-12">
               <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Products</a></li>
@@ -21,10 +26,12 @@
               </ul>
           </nav>
       </div>
-      <div class="header-bottom">
+      <div class="header-bottom l-col-span-full m-col-span-full col-span-full">
           <p>Experience the Best Audio Quality</p>
       </div>
   </header>
+
+
   
     <!-- <model-viewer> HTML element -->
     <model-viewer src="./model/Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="2" exposure="2" shadow-softness="0.44" auto-rotate>
@@ -74,9 +81,11 @@
       <div id="ar-prompt">
           <img src="./images/ar_hand_prompt.png">
       </div>
-    </model-viewer>  <footer>
-      <div class="footer-container">
-          <div class="footer-column">
+    </model-viewer>  
+    <footer >
+      <div class="grid-con">
+      <div class="footer-container l-col-span-full">
+          <div class="footer-column ">
               <h4>About boAt</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
           </div>
@@ -98,9 +107,10 @@
               </form>
           </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom l-col-span-full m-col-span-full col-span-full">
           <p>&copy; 2023 boAt. All rights reserved.</p>
       </div>
+    </div>
   </footer>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
