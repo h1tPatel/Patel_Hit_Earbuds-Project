@@ -99,3 +99,72 @@ hotspots.forEach((hotspot, index) => {
 // });
 
 })();
+
+
+(() => {
+    
+  (() => {
+      //vaiables
+      let imageCon = document.querySelector('#imageCon'),
+          drag = document.querySelector('.image-drag'),
+          left = document.querySelector('.image-left'),
+          dragging = false,
+          min = 0,
+          max = imageCon.offsetWidth;
+  
+  
+      function onDown() {
+          dragging = true;
+          console.log("on Down called")
+      }
+  
+      function onUp() {
+          dragging = false;
+          console.log("on Up called")
+      }
+  
+      function onMove() {
+          if (dragging === true) {
+              let x = event.clientX - imageCon.getBoundingClientRect().left;
+  
+              if (x < min) {
+                  x = min; //in other word zero
+              } else if (x > max) {
+                  x = max-10;
+              }
+  
+              drag.style.left = x + 'px';
+              left.style.width = x + 'px';
+          }
+  
+      }
+  
+      //event listeners
+  
+      drag.addEventListener('mousedown', onDown);
+      document.body.addEventListener('mouseup', onUp);
+      document.body.addEventListener('mousemove',onMove)
+  
+  
+  })();
+
+})();
+
+// Wait until the DOM is fully loaded before attaching event handlers
+document.addEventListener('DOMContentLoaded', function () {
+  // Attach the event listener to the hamburger icon
+  var hamburgerIcon = document.getElementById('hamburger-icon');
+  if (hamburgerIcon) {
+      hamburgerIcon.addEventListener('click', function() {
+          // Toggle the 'show' class on the mobile menu
+          var mobileMenu = document.getElementById('mobile-menu');
+          if (mobileMenu) {
+              mobileMenu.classList.toggle('show');
+          } else {
+              console.error('Mobile menu element not found.');
+          }
+      });
+  } else {
+      console.error('Hamburger icon element not found.');
+  }
+});

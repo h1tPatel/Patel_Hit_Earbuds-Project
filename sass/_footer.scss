@@ -1,0 +1,129 @@
+.footer-container {
+
+  justify-content: space-between; 
+  padding: 30px 5%;
+  background-color: #2c3e50;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 20px;
+}
+
+.footer-column p, .footer-column ul {
+  margin: 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #bdc3c7;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 10px 5%;
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00aaff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0088cc;
+}
+
+nav a:hover,
+.footer-column a:hover {
+  text-decoration: none;
+}
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ffffff;
+  transition: width .3s ease, background-color .3s ease;
+  -webkit-transition: width .3s ease, background-color .3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #00aaff;
+}
+
+.footer-column a {
+  position: relative;
+}
+
+.footer-column a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #bdc3c7;
+  transition: width .3s ease, background-color .3s ease;
+  -webkit-transition: width .3s ease, background-color .3s ease;
+}
+
+.footer-column a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #ffffff;
+}
+
+
+footer{
+  background-color:#2c3e50;
+}
+  

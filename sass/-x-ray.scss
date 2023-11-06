@@ -1,0 +1,48 @@
+#outerShell {
+  max-width: 1200px;
+  border: solid 1px #666;
+}
+
+#imageCon {
+  position: relative;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.slideImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.image-right {
+  background: url(../images/x-ray.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-left {
+  background: url(../images/x-ray-main-color.jpg) no-repeat;
+  width: 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-drag {
+  background-color: #4deeea;
+  left: 50%;
+  width: 4px;
+  cursor: pointer;
+}
+
+.promotioanl-images{
+  width: 500px;
+  height: auto;
+}
+
+.scroller-space{
+  height: 1000px;
+}
