@@ -12,18 +12,32 @@
     <link rel="stylesheet" href="./css/grid.css" rel="grid">
   </head>
   <body>
-    <header>
+    <header> 
       
       <div class="header-top grid-con ">
           <div id="logo" class="l-col-span-3 m-col-span-3">boAt</div>
+          <div id="hamburger-icon" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
           <nav class="l-col-start-6 l-col-end-12 m-col-span-6 l-col-span-12">
               <ul>
                   <li><a href="#">Home</a></li>
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="#">Shop Now</a></li>
+                  <li><a href="#">All Products</a></li>
                   <li><a href="#">Support</a></li>
                   <li><a href="#">Contact</a></li>
               </ul>
+          </nav>
+          <nav id="mobile-menu" class="hidden">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop Now</a></li>
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
           </nav>
       </div>
       <div class="header-bottom l-col-span-full m-col-span-full col-span-full">
@@ -82,14 +96,58 @@
           <img src="./images/ar_hand_prompt.png">
       </div>
     </model-viewer>  
-    <footer >
+
+    
       <div class="grid-con">
-      <div class="footer-container l-col-span-full">
-          <div class="footer-column ">
+        <img src="./images/photo1.jpg" alt="Promotional Image" class="promotioanl-images l-col-start-2 l-col-end-7 m-col-start-2 m-col-end-7 col-span-full box">
+        <p class="l-col-start-7 l-col-end-12 m-col-start-7 m-col-end-12 col-span-full box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam iste. Officiis quas architecto recusandae ad voluptatibus, optio iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum expedita eaque accusantium! Sed qui iure voluptas aspernatur praesentium!</p>
+      </div>
+      
+      <div class="grid-con">
+        <img src="./images/photo2.jpg" alt="Promotional Image" class="promotioanl-images l-col-start-2 l-col-end-7 m-col-start-2 m-col-end-7 col-span-full box">
+        <p class="l-col-start-7 l-col-end-12 m-col-start-7 m-col-end-12 col-span-full box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam iste. Officiis quas architecto recusandae ad voluptatibus, optio iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum expedita eaque accusantium! Sed qui iure voluptas aspernatur praesentium!</p>
+      </div>
+
+      <div class="grid-con">
+        <img src="./images/photo3.jpg" alt="Promotional Image" class="promotioanl-images l-col-start-2 l-col-end-7 m-col-start-2 m-col-end-7 col-span-full box">
+        <p class="l-col-start-7 l-col-end-12 m-col-start-7 m-col-end-12 col-span-full box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam iste. Officiis quas architecto recusandae ad voluptatibus, optio iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum expedita eaque accusantium! Sed qui iure voluptas aspernatur praesentium!</p>
+      </div>
+
+      <div class="grid-con">
+        <img src="./images/photo4.jpg" alt="Promotional Image" class="promotioanl-images l-col-start-2 l-col-end-7 m-col-start-2 m-col-end-7 col-span-full box">
+        <p class="l-col-start-7 l-col-end-12 m-col-start-7 m-col-end-12 col-span-full box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam iste. Officiis quas architecto recusandae ad voluptatibus, optio iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum expedita eaque accusantium! Sed qui iure voluptas aspernatur praesentium!</p>
+      </div>
+
+      <div class="grid-con">
+        <img src="./images/photo6.jpg" alt="Promotional Image" class="promotioanl-images l-col-start-2 l-col-end-7 m-col-start-2 m-col-end-7 col-span-full box">
+        <p class="l-col-start-7 l-col-end-12 m-col-start-7 m-col-end-12 col-span-full box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, laboriosam iste. Officiis quas architecto recusandae ad voluptatibus, optio iure nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam cum expedita eaque accusantium! Sed qui iure voluptas aspernatur praesentium!</p>
+      </div>
+
+
+    <div class="grid-con">
+      <div class="col-span-full">
+      <h2 class="hidden"> X-Ray Revealer</h2>
+      <div id="outerShell">
+          <div id="imageCon">
+              <div class="slideImage image-right"></div>
+              <div class="slideImage image-left"></div>
+              <div class="slideImage image-drag"></div> 
+          </div>
+      </div>
+
+      </div>
+      
+    </div>
+  
+
+    <footer >
+      <div>
+      <div class="footer-container grid-con ">
+          <div class="footer-column l-col-span-4 m-col-span-4 col-span-full">
               <h4>About boAt</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
           </div>
-          <div class="footer-column">
+          <div class="footer-column l-col-span-3 m-col-span-3 col-span-full">
               <h4>Quick Links</h4>
               <ul>
                   <li><a href="#">Products</a></li>
@@ -98,7 +156,7 @@
                   <li><a href="#">FAQs</a></li>
               </ul>
           </div>
-          <div class="footer-column">
+          <div class="footer-column l-col-span-5 m-col-span-5 col-span-full">
               <h4>Newsletter</h4>
               <p>Stay updated with our latest products and offers.</p>
               <form action="#">
@@ -112,6 +170,7 @@
       </div>
     </div>
   </footer>
+
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
