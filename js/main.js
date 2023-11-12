@@ -98,6 +98,32 @@ hotspots.forEach((hotspot, index) => {
 //   });
 // });
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.grid-con').forEach(section => {
+  gsap.from(section.querySelectorAll('.slide-right'), {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: section,
+      start: "30%",
+      toggleActions: "play none none none"
+    }
+  });
+
+  gsap.from(section.querySelectorAll('.slide-left'), {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: section,
+      start: "30%",
+      toggleActions: "play none none none"
+    }
+  });
+});
+
 })();
 
 
@@ -150,13 +176,13 @@ hotspots.forEach((hotspot, index) => {
 
 })();
 
-// Wait until the DOM is fully loaded before attaching event handlers
+
 document.addEventListener('DOMContentLoaded', function () {
-  // Attach the event listener to the hamburger icon
+  
   var hamburgerIcon = document.getElementById('hamburger-icon');
   if (hamburgerIcon) {
       hamburgerIcon.addEventListener('click', function() {
-          // Toggle the 'show' class on the mobile menu
+          
           var mobileMenu = document.getElementById('mobile-menu');
           if (mobileMenu) {
               mobileMenu.classList.toggle('show');
@@ -175,34 +201,33 @@ document.addEventListener('DOMContentLoaded', function () {
   const context = canvas.getContext("2d");
   canvas.width = 1920;
   canvas.height = 1080;
-  const frameCount = 450; // how many still frame do we have 
-  const images = []; // array to hold alll of our images 
+  const frameCount = 341; 
+  const images = []; 
 
-  //objject literal, that has a peoperty of framw to hold the current frame
+  
   const buds={
       frame: 0
   }
 
-  //run a for loop to populate our images array
+  
   for(let i=0; i<frameCount; i++){
 
-      // console.log(i);
+     
       const img = new Image();
-      //images/explode-0013.webp
+      
       img.src = `images/photo1_${(i+1).toString().padStart(4, '0')}.jpg`;
       images.push(img);
   }
 
-  // console.log(images);
+  
 
   gsap.to(buds, {
-      frame: 449,
+      frame: 341,
       snap: "frame",
       scrollTrigger: {
           trigger: "#explode-view",
           pin: true,
-          scrub: 7,
-          markers: true,
+          scrub: 8,
           start: "top top"
       },
       onUpdate: render
@@ -211,8 +236,6 @@ document.addEventListener('DOMContentLoaded', function () {
   images[0].addEventListener("onload", render);
 
   function render(){
-      // console.log(buds.frame);
-      // console.log(images[buds.frame]);
       context.clearRect(0,0, canvas.width, canvas.height);
       context.drawImage(images[buds.frame],0,0);
   }

@@ -1,48 +1,44 @@
 #outerShell {
-  max-width: 1200px;
-  border: solid 1px #666;
+  display: none;
 }
 
-#imageCon {
-  position: relative;
-  max-width: 1200px;
-  height: 100vh;
-}
-
-.slideImage {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 100vh;
-}
-
-.image-right {
-  background: url(../images/x-ray.png) no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.image-left {
-  background: url(../images/x-ray-main-color.jpg) no-repeat;
-  width: 50%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.image-drag {
-  background-color: #4deeea;
-  left: 50%;
-  width: 4px;
-  cursor: pointer;
-}
-
-.promotioanl-images {
-  width: 500px;
-  height: auto;
-}
-
-.scroller-space {
-  height: 1000px;
+@media screen and (min-width: 1200px) {
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    border: solid 1px #ff0000;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 100vh;
+  }
+  .slideImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+  }
+  .image-right {
+    background: url(../images/x-ray.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .image-left {
+    background: url(../images/x-ray-main-color.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    background-attachment: fixed;
+  }
+  .image-drag {
+    background-color: #ff0000;
+    left: 50%;
+    width: 10px;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=-x-ray.css.map */
