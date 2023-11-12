@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 #outerShell {
   max-width: 1200px;
   border: solid 1px #666;
@@ -18,21 +19,17 @@
 
 .image-right {
   background: url(../images/x-ray.png) no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
 }
 
 .image-left {
   background: url(../images/x-ray-main-color.jpg) no-repeat;
-  width: 50%;
-  background-attachment: fixed;
+  width: 100%;
   background-size: cover;
-  background-position: center center;
 }
 
 .image-drag {
-  background-color: #4deeea;
+  background-color: #ff1100;
   left: 50%;
   width: 4px;
   cursor: pointer;
@@ -232,6 +229,11 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+
 .footer-container {
   justify-content: space-between;
   padding: 30px 5%;
@@ -360,6 +362,10 @@ footer {
   background-color: #2c3e50;
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .header-top {
   justify-content: space-between;
   align-items: center;
@@ -424,6 +430,10 @@ nav a:hover {
   background-color: #f8f8f8;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
+}
+
+.para {
+  font-size: 19px;
 }
 
 @media screen and (max-width: 768px) {

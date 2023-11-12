@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .header-top {
   justify-content: space-between;
   align-items: center;
@@ -63,7 +68,9 @@ nav a:hover {
   margin: 5px 0; 
   transition: all 0.3s ease-in-out;
 }
-
+.para{
+  font-size: 19px;
+}
 @media screen and (max-width: 768px) {
   #hamburger-icon {
     display: block;
