@@ -18,17 +18,17 @@
 
 .image-right {
   background: url(../images/x-ray.png) no-repeat;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-size: cover;
-  // background-position: center center;
+  background-position: center center;
 }
 
 .image-left {
   background: url(../images/x-ray-main-color.jpg) no-repeat;
   width: 50%;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   background-size: cover;
-  // background-position: center center;
+  background-position: center center;
 }
 
 .image-drag {
@@ -37,12 +37,10 @@
   width: 4px;
   cursor: pointer;
 }
-
-.promotioanl-images{
+.promotioanl-images {
   width: 500px;
   height: auto;
 }
-
-.scroller-space{
+.scroller-space {
   height: 1000px;
 }
